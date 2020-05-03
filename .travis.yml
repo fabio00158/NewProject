@@ -1,4 +1,12 @@
 language: java
 jdk:
 - openjdk8
-script: ant build
+
+addons:
+ sonarcloud:
+  organization: fabio00158
+  token: travis encrypt 0398c50f345c123e8d47fb5d7fbdc19235e1dd9c
+
+script: 
+- ant build
+- sonar-scanner
