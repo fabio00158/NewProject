@@ -1,2 +1,0 @@
-# NewProject
-Dummy project
